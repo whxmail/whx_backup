@@ -1,6 +1,6 @@
 FROM ubuntu
 MAINTAINER Liubaozhu "syseye@163.com"
-ENV REFRESHED 2016-5-11
+ENV REFRESHED 2016-5-12
 
 RUN apt-get update
 RUN apt-get -y -q install nginx
