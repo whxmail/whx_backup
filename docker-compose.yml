@@ -1,0 +1,16 @@
+whx-nginx:
+  image: whx/nginx
+  ports:
+    - "80:80"
+  links:
+    - whx-mysql
+  volumes:
+    - whxmail.com:/usr/share/nginx/html
+  expose:
+    - "80 443"
+whx-mysql:
+  image: whx/mysql
+  expose:
+    - "3306"
+  environment:
+    - MYSQL_ROOT_PASSWORD=191908577
