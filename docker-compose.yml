@@ -1,15 +1,6 @@
-whx-nginx:
-  image: whx/nginx
+whx-go:
+  image: whx/go
   ports:
     - "8080:80"
-  links:
-    - whx-mysql:db
   volumes:
-    - $PWD/whxmail.com:/usr/share/nginx/html
-
-whx-mysql:
-  image: whx/mysql
-  ports:
-    - "3306"
-  environment:
-    - MYSQL_ROOT_PASSWORD=191908577
+    - /whx:/whx
