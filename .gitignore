@@ -1,4 +1,4 @@
-/app.go/bin
-/app.go/pkg
-/go
+/bin/*
+/pkg/*
+/go/*
 
